@@ -1,0 +1,39 @@
+.header {
+	padding: 5px; 
+	background: #000;
+	text-align: center;
+	position: relative;
+	height: 114px;
+	line-height: 114px;
+}
+
+.header::before,
+.header::after {
+	display: block;
+	content: '';
+	background: url(../../IMG/Content/dotted_header.png) no-repeat 0 0;
+	position: absolute;
+	width: 46px;
+	height: 100%;
+	top: 7px;
+	z-index: 999;
+}
+
+.header::before {
+	left: 8px; 
+}
+
+.header::after {
+	right: 8px;
+}
+
+
+.header__logo-wrapp {
+	display: inline-block;
+}
+
+.header__logo {
+	display: block;
+	width: 100%;
+}
+
